@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .navButtons {
+    @apply text-[#5202A1] bg-[#FAF5F5] w-24 h-6 rounded-md shrink-0 text-center;
+  }
+}

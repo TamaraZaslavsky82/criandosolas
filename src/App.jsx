@@ -1,17 +1,15 @@
-import { useState } from 'react'
-import Home from './Components/Home/Home'
-
-import './App.css'
-
+import Home from "./Components/Home/Home";
+import Navbar from "./Components/Navbar/Navbar";
+import { Routes, Route } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     
-     <Home/>
-    </>
-  )
+    <div className="w-screen h-screen flex flex-col justify-start items-center">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
