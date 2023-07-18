@@ -6,4 +6,15 @@
   .navButtons {
     @apply text-[#5202A1] bg-[#FAF5F5] w-24 h-6 rounded-md shrink-0 text-center;
   }
+  .primaryButton {
+    @apply text-[#FAF5F5] bg-[#C89BC8] w-32 h-auto rounded-md shrink-0 text-center py-3;
+  }
+  .secondaryButton {
+    @apply text-[#5202A1] bg-[#FAF5F5] w-32 h-auto rounded-md shrink-0 text-center py-3;
+  }
+  .customBackground {
+    background-image: url('./assets/bgHome.png');
+    background-size: cover;
+    background-position: center;
+  }
 }
