@@ -4,8 +4,8 @@ import 'tailwindcss/tailwind.css';
 
 function Home() {
   return (
-    <div  >
-      
+    <div className='pt-10'>
+      soy home
     </div>
   );
 }
