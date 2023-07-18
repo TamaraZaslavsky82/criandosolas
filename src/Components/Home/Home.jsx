@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import 'tailwindcss/tailwind.css';
+
 
 function Home() {
   return (
-    <div>
-      soy home
+    <div  >
+      
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
