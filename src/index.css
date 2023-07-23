@@ -15,6 +15,7 @@
   .customBackground {
     background-image: url('./assets/bgHome.png');
     background-size: cover;
-    background-position: center;
+    background-position: start;
+    width: 100%;
   }
 }
