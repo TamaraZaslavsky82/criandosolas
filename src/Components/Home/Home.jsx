@@ -24,7 +24,7 @@ function Home() {
           <img src={image1} alt="image1" />
         </section>
         <section className=" flex flex-col lg:flex-row w-full justify-between gap-10">
-          <div className="flex flex-col lg:w-[500px] bg-[#C89BC8] box-border p-5 gap-x-5 rounded-3xl justify-between">
+          <div className="flex flex-col lg:w-[500px] bg-[#c89bc849] box-border p-5 gap-x-5 rounded-3xl justify-between">
             <img src={image2} alt="image2" className="w-full" />
             <div className="flex flex-col w-full ">
               <p>
@@ -36,7 +36,7 @@ function Home() {
               <button className="secondaryButton">Se parte</button>
             </div>
           </div>
-          <div className="flex flex-col lg:w-[500px] bg-[#C89BC8] box-border px-5 py-4 gap-x-5 rounded-3xl justify-between">
+          <div className="flex flex-col lg:w-[500px] bg-[#c89bc849] box-border px-5 py-4 gap-x-5 rounded-3xl justify-between">
             <img src={image3} alt="image3" className="w-full" />
             <div className="flex flex-col w-full ">
               <p>
