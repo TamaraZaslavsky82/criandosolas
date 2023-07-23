@@ -5,9 +5,9 @@ import image3 from "../../assets/image3.svg";
 function Home() {
   return (
     <div className="w-screen max-w-[1200px] h-full py-10 ">
-      <div className={`flex flex-col gap-y-10  `}>
-        <section className="flex justify-between  ">
-          <div className="w-[652px] flex flex-col justify-start gap-y-5">
+      <div className='flex flex-col gap-10 p-10'>
+        <section className="flex flex-col-reverse gap-5 justify-between  lg:flex-row ">
+          <div className=" flex flex-col justify-start gap-y-5">
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -23,10 +23,10 @@ function Home() {
           </div>
           <img src={image1} alt="image1" />
         </section>
-        <section className=" flex justify-between gap-x-10">
-          <div className="flex w-[618px] h-[330px] bg-[#C89BC8] box-border px-5 py-4 gap-x-5 rounded-3xl ">
-            <img src={image2} alt="image2" className="w-80" />
-            <div className="flex flex-col w-52 ">
+        <section className=" flex flex-col lg:flex-row w-full justify-between gap-10">
+          <div className="flex flex-col lg:w-[500px] bg-[#C89BC8] box-border p-5 gap-x-5 rounded-3xl justify-between">
+            <img src={image2} alt="image2" className="w-full" />
+            <div className="flex flex-col w-full ">
               <p>
                 But I must explain to you how all this mistaken idea of
                 denouncing pleasure and praising pain was born and I will give
@@ -36,9 +36,9 @@ function Home() {
               <button className="secondaryButton">Se parte</button>
             </div>
           </div>
-          <div className="flex w-[618px] h-[330px] bg-[#C89BC8] box-border px-5 py-4 gap-x-5 rounded-3xl ">
-            <img src={image3} alt="image3" className="w-80" />
-            <div className="flex flex-col w-52 ">
+          <div className="flex flex-col lg:w-[500px] bg-[#C89BC8] box-border px-5 py-4 gap-x-5 rounded-3xl justify-between">
+            <img src={image3} alt="image3" className="w-full" />
+            <div className="flex flex-col w-full ">
               <p>
                 But I must explain to you how all this mistaken idea of
                 denouncing pleasure and praising pain was born and I will give
