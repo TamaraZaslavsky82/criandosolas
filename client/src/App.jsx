@@ -1,9 +1,11 @@
-import Dashboard from "./Components/Dashboard/Dashboard";
-import Footer from "./Components/Footer/Footer";
+import { Routes, Route, useLocation } from "react-router-dom";
+//Componentes
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Register from "./Components/Register/Register";
-import { Routes, Route, useLocation } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
+import Dashboard from "./Components/Dashboard/Dashboard";
+import Login from "./Components/Login/Login";
 
 function App() {
   const { pathname } = useLocation();
@@ -13,8 +15,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/dashboard" element={<Dashboard />}></Route>
+
         <Route path="/registro" element={<Register />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
       </Routes>
       <Footer />
     </div>

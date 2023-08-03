@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { FaBars, FaTimes } from "react-icons/fa";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -12,7 +13,7 @@ const Navbar = () => {
       } w-full  lg:h-[70px] flex items-center justify-between bg-[#D6BED6] mt-14 px-10`}
     >
       <div className="flex box-border  items-center justify-start object-fit">
-        <img src={logo} alt="logo" className="block w-[121px] h-[114px]" />
+        <Link to="/"><img src={logo} alt="logo" className="block w-[121px] h-[114px]" /></Link>
       </div>
       <h1 className="flex-grow text-center text-gray-800 opacity-75 text-shadow ">Somos Jauría</h1>
       <div className="hidden lg:flex  gap-x-6 justify-end">
