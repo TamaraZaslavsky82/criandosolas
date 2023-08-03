@@ -1,0 +1,31 @@
+.direction{
+display: block;
+flex-direction: column;
+align-items: center;
+}
+
+.fixPosition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 3vh;
+    width: 40vw;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 0.5%;
+}
+
+.container {
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2%;
+    width: fit-content;
+    border-radius: 5%;
+  }

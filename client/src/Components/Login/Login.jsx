@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -31,11 +31,15 @@ const Login = () => {
 
   return (
     <>
-      <h2 className="text-2xl text-[#5202A1] my-10">Inicio de sesión sólo para usuarias habilitadas</h2>
+      <h2 className="text-2xl text-[#5202A1] my-10">
+        Inicio de sesión sólo para usuarias habilitadas
+      </h2>
       <div className="container bg-[#D6BED6] m-auto rounded-xl w-1/4 p-7 border-2 border-purple-600">
         <form onSubmit={handleSubmit}>
           <div className="my-5">
-            <label className="text-white" htmlFor="email">Nombre de usuario</label>
+            <label className="text-white" htmlFor="email">
+              Nombre de usuario
+            </label>
             <input
               className="p-2 rounded-lg w-full"
               type="text"
@@ -44,13 +48,13 @@ const Login = () => {
               value={user.username}
               onChange={handleInputChange}
             />
-            {errors.email && (
-              <p className="text-red-600 mx-auto">{errors.username}</p>
-            )}
+            {errors.email && <p className="text-red-600 mx-auto">{errors.username}</p>}
           </div>
 
           <div className="my-5">
-            <label className="text-white" htmlFor="password">Contraseña</label>
+            <label className="text-white" htmlFor="password">
+              Contraseña
+            </label>
             <input
               className="p-2 rounded-lg w-full"
               type="password"
@@ -59,9 +63,7 @@ const Login = () => {
               value={user.password}
               onChange={handleInputChange}
             />
-            {errors.password && (
-              <p className="text-red-600 mx-auto">{errors.password}</p>
-            )}
+            {errors.password && <p className="text-red-600 mx-auto">{errors.password}</p>}
           </div>
 
           <div className="flex justify-center">
